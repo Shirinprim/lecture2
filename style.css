@@ -1,0 +1,106 @@
+/** {
+	color: red;
+}*/
+
+@font-face {
+	font-family: myFont;
+	src: url(Branda-yolq.ttf);
+}
+
+table, th, td {
+	border: 1px solid black; 
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px 20px;
+	text-align: left;
+	vertical-align: top;
+
+}
+tr:nth-child(even) {
+	background-color: #234789;
+}
+
+tr:hover {
+	background-color: black;
+	color: #fff;
+}
+
+tr {transition: background-color 2s, color 4s;}
+
+
+
+
+ol {
+	list-style-type: arabic-indic;
+}
+
+ul {
+	border: 1px solid black;
+	list-style-type: disc;
+	list-style-position: outside;
+}
+ul li {
+	border: 1px solid black;
+}
+
+
+p {
+	/*color: red !important;
+	font-family: myFont;*/
+}
+
+#p3:first-line {
+	color: grey;
+	text-shadow: 10px 10px 5px red;
+}
+
+#paragraph1 {
+	color: white;
+	font-size: 1.5em;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-style: italic; 
+	background-color: #333;
+	padding: 10px 20px 30px;
+	box-shadow: 0 0 10px blue;
+}
+
+.para2 {
+	color: blue;
+}
+
+table, header {
+	color: yellow;
+	font-size: 1.5em;
+}
+
+
+footer {
+	font-size: 1.5em;
+}
+
+footer p {
+	color: orange;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	background-color: black;
+}
+main {
+	font-size: 2em;
+}
+
+main p{
+	font-size: 1rem;
+}
+
+#rel {
+	font-size: 16px;
+}

@@ -1,0 +1,200 @@
+/*html {
+	scroll-behavior: smooth;
+}
+
+header div {
+	height: 100px;
+	background-color: red;
+}
+
+header, section, footer {
+	width: 100%;
+	height: 100vh;
+}
+
+nav {
+	background-color: black;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	z-index: 1;
+
+}
+
+nav a {
+	color: white;
+	padding: 10px 20px;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-color: #333;
+}
+
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("bg.jpg");
+
+	background-color: rgba(10, 3, 3, 0.5);
+	background-blend-mode: overlay;
+}*/
+
+main {
+	display: grid;
+	grid-template-areas: 'header' 'menu' 'main' 'aside' 'footer';
+	background-color: #234724;
+	gap: 20px;
+}
+
+header, nav, .about, .event, footer {
+	background-color: #648560;
+}
+
+header {
+	grid-area: header;
+	background-color: red;
+}
+
+nav {
+	grid-area: menu;
+}
+
+#about {
+	grid-area: main;
+	background-color: #423424;
+}
+
+#event {
+	grid-area: aside;
+	background-color: #654964;
+}
+
+footer {
+	grid-area: footer;
+	background-color: ;
+}
+
+
+
+
+#event {
+	
+	/*grid-template-columns: repeat(12, [col-start] 1fr);*/
+
+	
+	column-gap: 10px;
+	row-gap: 20px;
+
+}
+
+#event div{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	justify-self: right;
+	align-self: center;
+}
+
+@media (min-width: 700px) {
+	* {
+		font-size: 1em;
+	}
+	header {
+		grid-area: 1 / span 12;
+	}
+
+	nav {
+		grid-area: 2 / span 12;
+	}
+	#about {
+		grid-area: 3 / span 5;
+	}
+
+	#event {
+		grid-area: 3 / span 4;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	footer {
+		grid-area: 4 / span 12;
+	}
+
+	#event {
+
+	}
+
+}
+
+
+@media (min-width: 1000px) {
+	
+#about {
+		grid-area: 2 / span 5;
+	}
+
+
+	#event {
+		grid-area: 2 / span 4;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+footer {
+		grid-area: 3 / span 12;
+	}
+
+}
+/*
+#contacts {
+	position: relative;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#contacts h2 {
+	position: absolute;
+	bottom: 400px;
+	left: 500px;
+}
+
+#contacts main{
+	background-color: red;
+	width: 400px;
+	height: 500px;
+	position: relative;
+}
+
+#contacts main div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+form {
+	background-color: green;
+	border-radius: 20px;
+	width: 30%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+
+}
+
+label {
+	color: white;
+}
+
+input, textarea, button {
+	padding: 10px;
+	border-radius: 10px;
+}*/
